@@ -1,0 +1,70 @@
+Stack Overflow - Data Dump: September 2010
+ - Format: 7zipped 
+ - Files:
+   - **badges**.xml
+       - UserId, e.g.: "420"
+       - Name, e.g.: "Teacher" 
+       - Date, e.g.: "2008-09-15T08:55:03.923" 
+   - **comments**.xml
+       - Id
+       - PostId 
+       - Score
+       - Text, e.g.: "@Stu Thompson: What a horrible idea, you clueless git!" 
+       - CreationDate, e.g.:"2008-09-06T08:07:10.730" 
+       - UserId
+   - **posts**.xml
+       - Id 
+       - PostTypeId
+          - 1: Question (?)
+          - 2: Answer (?)
+       - ParentID (only present if PostTypeId is 2)
+       - AcceptedAnswerId (only present if PostTypeId is 1)
+       - CreationDate 
+       - Score 
+       - ViewCount
+       - Body 
+       - OwnerUserId
+       - LastEditorUserId 
+       - LastEditorDisplayName="Rich B" 
+       - LastEditDate="2009-03-05T22:28:34.823" 
+       - LastActivityDate="2009-03-11T12:51:01.480" 
+       - CommunityOwnedDate="2009-03-11T12:51:01.480" 
+       - ClosedDate="2009-03-11T12:51:01.480" 
+       - Title= 
+       - Tags= 
+       - AnswerCount 
+       - CommentCount 
+       - FavoriteCount
+   - **users**.xml
+       - Id 
+       - Reputation 
+       - CreationDate 
+       - DisplayName 
+       - LastAccessDate 
+       - WebsiteUrl 
+       - Location
+       - Age 
+       - AboutMe 
+       - Views 
+       - UpVotes 
+       - DownVotes
+   - **votes**.xml 
+       - Id 
+       - PostId 
+       - VoteTypeId
+          - ` 1`: AcceptedByOriginator
+          - ` 2`: UpMod
+          - ` 3`: DownMod
+          - ` 4`: Offensive
+          - ` 5`: Favorite - if VoteTypeId = 5 UserId will be populated
+          - ` 6`: Close
+          - ` 7`: Reopen
+          - ` 8`: BountyStart
+          - ` 9`: BountyClose
+          - `10`: Deletion
+          - `11`: Undeletion
+          - `12`: Spam
+          - `13`: InformModerator
+       - CreationDate
+       - UserId (only for VoteTypeId 5)
+       - BountyAmount (only for VoteTypeId 9)

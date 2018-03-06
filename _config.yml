@@ -1,0 +1,11 @@
+{
+  "exclude": [
+    "data"
+  ],
+  "stack_site": {
+    "name": "AskAboutGadgets",
+    "proposal_id": 614,
+    "slug": "gadgets"
+  },
+  "title": "AskAboutGadgets Archive"
+}
